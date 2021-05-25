@@ -13,6 +13,7 @@
 		7CAE76F4265D97E1009A09F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CAE76F3265D97E1009A09F4 /* Assets.xcassets */; };
 		7CAE76F7265D97E1009A09F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CAE76F6265D97E1009A09F4 /* Preview Assets.xcassets */; };
 		7CAE76FA265D97E1009A09F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CAE76F8265D97E1009A09F4 /* LaunchScreen.storyboard */; };
+		7CAE7703265D9EAF009A09F4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAE7702265D9EAF009A09F4 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7CAE76F6265D97E1009A09F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CAE76F9265D97E1009A09F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CAE76FB265D97E1009A09F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CAE7702265D9EAF009A09F4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7CAE76F8265D97E1009A09F4 /* LaunchScreen.storyboard */,
 				7CAE76FB265D97E1009A09F4 /* Info.plist */,
 				7CAE76F5265D97E1009A09F4 /* Preview Content */,
+				7CAE7702265D9EAF009A09F4 /* Config.swift */,
 			);
 			path = AnimatedNavBar;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CAE76EE265D97E0009A09F4 /* AppDelegate.swift in Sources */,
+				7CAE7703265D9EAF009A09F4 /* Config.swift in Sources */,
 				7CAE76F0265D97E0009A09F4 /* SceneDelegate.swift in Sources */,
 				7CAE76F2265D97E0009A09F4 /* ContentView.swift in Sources */,
 			);
