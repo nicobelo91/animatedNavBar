@@ -78,7 +78,7 @@ struct CustomTabBar: View {
                     }
                 }
             }
-            .blur(radius: isNavBarHidden ? 3 : 0)
+//            .blur(radius: isNavBarHidden ? 3 : 0)
 //            .overlay(isNavBarHidden ? Color.gray.opacity(0.3) : Color.clear)
             
             ZStack {
@@ -194,6 +194,7 @@ struct PlusButton: View {
                 .background(isNavBarHidden ? Color.red : Color.blue)
                 .cornerRadius(30)
                 .rotationEffect(.degrees(isNavBarHidden ? 45 : 0))
+                .animation(.interactiveSpring(response: 0.75, dampingFraction: 0.4, blendDuration: 0))
         })
     }
 }
