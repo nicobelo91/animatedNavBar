@@ -182,20 +182,19 @@ struct PlusButton: View {
     @Binding var isNavBarHidden: Bool
     
     var body: some View {
-        Button(action: {
-            withAnimation(.easeOut) {
-                isNavBarHidden.toggle()
+        Image(systemName: "plus")
+            .font(.system(size: 25, weight: .regular, design: .default))
+            .foregroundColor(.white)
+            .frame(width: 60, height: 60)
+            .background(isNavBarHidden ? Color.red : Color.blue)
+            .cornerRadius(30)
+            .rotationEffect(.degrees(isNavBarHidden ? 45 : 0))
+            .animation(.interactiveSpring(response: 0.75, dampingFraction: 0.4, blendDuration: 0))
+            .onTapGesture {
+                withAnimation(.easeOut) {
+                    isNavBarHidden.toggle()
+                }
             }
-        }, label: {
-            Image(systemName: "plus")
-                .font(.system(size: 25, weight: .regular, design: .default))
-                .foregroundColor(.white)
-                .frame(width: 60, height: 60)
-                .background(isNavBarHidden ? Color.red : Color.blue)
-                .cornerRadius(30)
-                .rotationEffect(.degrees(isNavBarHidden ? 45 : 0))
-                .animation(.interactiveSpring(response: 0.75, dampingFraction: 0.4, blendDuration: 0))
-        })
     }
 }
 
