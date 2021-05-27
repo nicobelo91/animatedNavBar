@@ -122,7 +122,7 @@ struct ExtraButton: View {
     var body: some View {
         Button(action: {
             selectedIndex = indexValue
-            withAnimation {
+            withAnimation(.easeOut) {
                 isNavBarHidden.toggle()
             }
         }, label: {
@@ -179,7 +179,7 @@ struct AddButton: View {
     
     var body: some View {
         Button(action: {
-            withAnimation {
+            withAnimation(.easeOut) {
                 isNavBarHidden.toggle()
             }
         }, label: {
