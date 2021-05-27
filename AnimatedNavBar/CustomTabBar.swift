@@ -78,6 +78,8 @@ struct CustomTabBar: View {
                     }
                 }
             }
+            .blur(radius: isNavBarHidden ? 3 : 0)
+//            .overlay(isNavBarHidden ? Color.gray.opacity(0.3) : Color.clear)
             
             ZStack {
                 VStack(spacing: 10) {
@@ -104,6 +106,7 @@ struct CustomTabBar: View {
 
             
         }
+        
     }
 }
 
@@ -132,6 +135,7 @@ struct ExtraButton: View {
                 .frame(width: 50, height: 50)
                 .background(Config.Colors.darkBlue)
                 .cornerRadius(30)
+//                .opacity(isNavBarHidden ? 1 : 0)
         })
             
     }
