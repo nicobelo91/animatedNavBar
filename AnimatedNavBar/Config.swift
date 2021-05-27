@@ -5,7 +5,7 @@
 //  Created by Nicolas Cobelo on 25/05/2021.
 //
 
-import Foundation
+import SwiftUI
 
 struct Config {
     
@@ -20,5 +20,9 @@ struct Config {
         static let microphone = "mic"
         static let music = "music.note"
         
+    }
+    
+    struct Colors {
+        static let darkBlue: Color = Color.init(red: 30.0/255.0, green: 98.0/255.0, blue: 181.0/255.0)
     }
 }

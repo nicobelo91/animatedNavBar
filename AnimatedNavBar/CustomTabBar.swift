@@ -99,7 +99,7 @@ struct CustomTabBar: View {
                 ExtraButton(isNavBarHidden: $isNavBarHidden, selectedIndex: $selectedIndex, icon: "person", indexValue: 8)
                     .offset(x: isNavBarHidden ? 130 : 0,
                             y: isNavBarHidden ? -50 : 0)
-                AddButton(isNavBarHidden: $isNavBarHidden)
+                PlusButton(isNavBarHidden: $isNavBarHidden)
             }
 
             
@@ -130,7 +130,7 @@ struct ExtraButton: View {
                 .font(.system(size: 25, weight: .regular, design: .default))
                 .foregroundColor(.white)
                 .frame(width: 50, height: 50)
-                .background(Color.red)
+                .background(Config.Colors.darkBlue)
                 .cornerRadius(30)
         })
             
@@ -173,7 +173,7 @@ struct CustomNavBar2: View {
 }
 
 
-struct AddButton: View {
+struct PlusButton: View {
     
     @Binding var isNavBarHidden: Bool
     
@@ -187,7 +187,7 @@ struct AddButton: View {
                 .font(.system(size: 25, weight: .regular, design: .default))
                 .foregroundColor(.white)
                 .frame(width: 60, height: 60)
-                .background(Color.blue)
+                .background(isNavBarHidden ? Color.red : Color.blue)
                 .cornerRadius(30)
                 .rotationEffect(.degrees(isNavBarHidden ? 45 : 0))
         })
