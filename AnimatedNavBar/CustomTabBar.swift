@@ -23,56 +23,56 @@ struct CustomTabBar: View {
                 case 0:
                     NavigationView {
                         VStack {
-                            Text("First Screen")
+                            Text("Home Screen")
                         }
                         .navigationTitle("Home")
                     }
                 case 1:
                     NavigationView {
                         VStack {
-                            Text("First Screen")
+                            Text("Settings Screen")
                         }
                         .navigationTitle("Settings")
                     }
                 case 3:
                     NavigationView {
                         VStack {
-                            Text("First Screen")
+                            Text("Edit Screen")
                         }
                         .navigationTitle("Edit")
                     }
                 case 4:
                     NavigationView {
                         VStack {
-                            Text("First Screen")
+                            Text("Message Screen")
                         }
                         .navigationTitle("Message")
                     }
                 case 5:
                     NavigationView {
                         VStack {
-                            Text("First Screen")
+                            Text("Camera Screen")
                         }
                         .navigationTitle("Camera")
                     }
                 case 6:
                     NavigationView {
                         VStack {
-                            Text("First Screen")
+                            Text("Video Screen")
                         }
                         .navigationTitle("Video")
                     }
                 case 7:
                     NavigationView {
                         VStack {
-                            Text("First Screen")
+                            Text("Audio Screen")
                         }
                         .navigationTitle("Audio")
                     }
                 default:
                     NavigationView {
                         VStack {
-                            Text("First Screen")
+                            Text("Profile Screen")
                         }
                         .navigationTitle("Profile")
                     }
@@ -85,7 +85,7 @@ struct CustomTabBar: View {
                 VStack(spacing: 10) {
                     Divider()
                     
-                    CustomNavBar2(selectedIndex: $selectedIndex)
+                    NavBarItem(selectedIndex: $selectedIndex)
                 }
                 .offset(x: 0, y: isNavBarHidden ? 100 : 0)
                 
@@ -135,13 +135,13 @@ struct ExtraButton: View {
                 .frame(width: 50, height: 50)
                 .background(Config.Colors.darkBlue)
                 .cornerRadius(30)
-//                .opacity(isNavBarHidden ? 1 : 0)
+//                .opacity(isN2vBarHidden ? 1 : 0)
         })
             
     }
 }
 
-struct CustomNavBar2: View {
+struct NavBarItem: View {
     @Binding var selectedIndex: Int
     let icons = [
         "house",
